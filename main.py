@@ -17,7 +17,7 @@ def export_envs_from_yaml(file_path: str):
 
 def export_envs(environment: str):
     """Load environment variables from .env file."""
-    env_file = f".env.{environment}"
+    env_file = f".config/.env.{environment}"
     if not os.path.exists(env_file):
         raise FileNotFoundError(f"Environment file '{env_file}' not found.")
     load_dotenv(env_file)
