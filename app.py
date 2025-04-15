@@ -30,3 +30,6 @@ def predict_endpoint(request: PredictRequest):
         ],
     )
     return PredictResponse(prediction=prediction)
+
+
+# changed file
